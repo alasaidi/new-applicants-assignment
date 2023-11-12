@@ -32,14 +32,23 @@ body {
 .displays {
     height: 100px;
     width: 100%;
-    outline: none;
-    border: none;
-    text-align: right;
-    margin-bottom: 15px;
-    font-size: 25px;
-    color: #031a00;
-    pointer-events: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
     background-color: transparent;
+}
+.displays .previous-display {
+    color: rgb(243, 243, 243);
+    font-size: 2.5vh;
+}
+
+.displays .current-display {
+    color: white;
+    font-size: 3.5vh;
 }
 .buttons {
     display: grid;
@@ -59,4 +68,7 @@ body {
     color: #fff;
     cursor: pointer;
     margin: auto;
+}
+.buttons button:hover {
+    background-color: #6c9e70;
 }
